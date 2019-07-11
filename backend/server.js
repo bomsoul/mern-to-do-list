@@ -28,7 +28,9 @@ todoRoutes.route('/').get(function(req, res){
 })
 
 todoRoutes.route('/:id').get(function(req, res) {
-    let id = req.param.id;
+    let id = req.params.id;
+    // you have to debug every variables when not sure about the bugs.
+    // console.log(id)
     Todo.findById(id, function(err, todo){
         res.json(todo);
     })
