@@ -85,7 +85,7 @@ export default class createTodo extends React.Component{
                                     type="radio"
                                     name="priorityOption"
                                     id="priorityLow"
-                                    value="low"
+                                    value="Low"
                                     checked={this.state.todo_priority ==='Low'}
                                     onChange={this.onChangeTodoPriority}
                             />
